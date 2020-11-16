@@ -53,3 +53,12 @@
 #             d.append(item)
 #     return d
 # print(oddlist(myList))
+
+# 6. only_evens function with remove
+# myList = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# def evenlist(evenlist):
+#     for item in evenlist:
+#         if isEven(item):
+#             evenlist.remove(item)
+# print(evenlist(myList))
+# print(myList)
