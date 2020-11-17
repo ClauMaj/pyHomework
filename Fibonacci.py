@@ -1,21 +1,28 @@
 
-# Fibonacci recursive
+# 1.  Fibonacci recursive
 
-def recur_fibo(n):
-    if n <= 1:
-        return n
-    else:
-        return(recur_fibo(n-1) + recur_fibo(n-2))
+# def recur_fibo(n):
+#     if n <= 0:
+#         print("Please enter a number > 0")
+#         exit()
+#     elif n == 1:
+#         return 0
+#     elif n == 2:
+#         return 1
+#     else:
+#         return(recur_fibo(n-1) + recur_fibo(n-2))
 
-# Fibonacci array
+# print(recur_fibo(10))
 
-# Fibonacci if
+
+# 2. Fibonacci if
 
 def fibonacci(n):
     a = 0
     b = 1
     if n <= 0:
-        print("Incorrect input")
+        print("Please enter a number > 0")
+        exit()
     elif n == 1:
         return b
     else:
@@ -23,6 +30,6 @@ def fibonacci(n):
             c = a + b
             a = b
             b = c
-        return c
+    return c
 
-print(fibonacci(9)
+print(fibonacci(10))

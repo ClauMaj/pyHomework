@@ -1,7 +1,7 @@
 
-lista = ['a' , 'b' , 'c' , 'd' , 'e', 'f']
-for item in lista:
-    lista.append(item)
-    del lista[0]
-
-print(lista)
+def reverse(s): 
+    str = "" 
+    for i in s: 
+        str = i + str
+    return str
+print(reverse('madlib'))

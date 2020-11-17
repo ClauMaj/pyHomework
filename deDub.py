@@ -4,7 +4,7 @@ deDub = []
 for i in range(len(myList)):  # i is the index
     if myList[i] not in deDub:
         deDub.append(myList[i])
-# for item not in myList
-#     deDub.append(item)
+#   for item not in myList
+#       deDub.append(item)
 print(deDub)
 
