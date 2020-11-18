@@ -5,7 +5,7 @@
 
 temp = float(input('Temperature in C? '))
 cel = temp * 9 / 5 + 32
-if cel  != int(cel):
-    print('Temperature in F is: {}'.format(cel))
+if cel  == int(cel):
+    print(f'Temperature in F is: {cel}')
 else: 
-    print('Temperature in F is: {}'.format(int(cel)))
+    print(f'Temperature in F is: {int(cel)}')
