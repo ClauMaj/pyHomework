@@ -54,12 +54,15 @@ def pick2():
 
 def pick3():
     name3 = input("Name: ")
-    del phonebook[name3]
-    print(f"Deleted entry for {name3}")
+    if name3 in phonebook:
+        del phonebook[name3]
+        print(f"Deleted entry for {name3}.")
+    else:
+        print(f"Could not find {name3}'s entry.")
 
 def pick4():
     count = 1
-    for key, value in phonebook.items():
+    for key, value in sorted(phonebook.items()):
         if count == 1:
             print(f"\n{count}. Found entry for {key}: {value}")
         else:
@@ -85,8 +88,7 @@ while start != '5':
         print("\nWrong input, try again!")
         start = menu()
 
-
-print(phonebook.items())
+print("\nThank you for choosing Delta Airlines. Hope you enjoyed the flight!")
 
 with open('phonebook.pickle', 'wb') as fh:
     pickle.dump(phonebook, fh)
